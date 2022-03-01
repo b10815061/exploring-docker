@@ -29,3 +29,11 @@ flags:
         1. -f : 通常要先stop才可以rm，用-f可以stop+rm
         
         2. container-id的部分可以用類js的寫法，例: docker rm $(docker ps -a -q)，刪除所有container
+        
+docker volume create --name [name]
+
+建立一個volume讓開啟container時可以使用
+
+docker run --name db -e POSTGRES_USER=tommy -e POSTGRES_PASSWORD=0000 -v pg-data -d postgres
+
+使用postgres image建立一個container名字叫做db，使用者是tommy且密碼是0000，volume使用pg-data
