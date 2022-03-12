@@ -43,3 +43,5 @@ docker run --name db -e POSTGRES_USER=tommy -e POSTGRES_PASSWORD=0000 -e POSTGRE
 如果exec以後他說沒有這個user，有可能是volume用到舊的
 
 postgres版本很重要，要使用12-alpine
+
+如果一直顯示密碼錯誤但檢查所有設置都是正確的情況下，有可能是本機的postsql擋住了docker裡面的，這時候去到服務把本機的postsql停止。
