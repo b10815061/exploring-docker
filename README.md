@@ -45,3 +45,26 @@ docker run --name db -e POSTGRES_USER=tommy -e POSTGRES_PASSWORD=0000 -e POSTGRE
 postgres版本很重要，要使用12-alpine
 
 如果一直顯示密碼錯誤但檢查所有設置都是正確的情況下，有可能是本機的postsql擋住了docker裡面的，這時候去到服務把本機的postsql停止。
+
+# using dockerfile
+
+## first need to build a image
+
+
+docker build [flag] [path]
+
+
+flags:
+
+        1.-t : tag : 給這個image一個名字
+
+path:
+
+        Dockerfile所在的位置，.的話就表示現在跟Dockerfile在同一層
+        
+## then run from the image
+
+
+docker run [flag] [image-name]
+
+
