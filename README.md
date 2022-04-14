@@ -6,6 +6,9 @@ while we want to do the opposite, we run up hypervisor (locate it at windows key
 
 & run CMD with adminstrator > $bcdedit /set hypervisorlaunchtype auto
 
+# docker GUI
+開啟xserver；在dockerfile裡面寫```RUN apt update && apt install -y pcmanfm xterm \ ENV DISPLAY=host.docker.internal:0.0 \ CMD pcmanfm```
+
 
 docker run [flags] [image] [instrcution]
 
