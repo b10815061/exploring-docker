@@ -21,7 +21,7 @@ flags :
         
 instrcution:
 
-        1.tail -f /dev/null
+        1.tail -f /dev/null : 
         
 docker exec [flags] [container-id] [instruction]
 
