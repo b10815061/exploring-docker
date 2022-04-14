@@ -1,5 +1,10 @@
 # exploring-docker
 
+docker depends on windows hypervisor & WSL(linux on windows), when hyperV running, we cant start vm but to shut it down;
+
+while we want to do the opposite, we run up hypervisor (locate it at windows key>controll console>uninstall programs>able or disable windows program> find hyperV)
+
+
 docker run [flags] [image] [instrcution]
 
 flags : 
