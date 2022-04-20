@@ -82,4 +82,23 @@ path:
 
 docker run [flag] [image-name]
 
+# 在不確定docker環境的os情況下
+
+## enter docker, try:
+
+```
+docker exec -it "name" /bin/bash || docker exec -it "name" /bin/sh
+```
+
+## to know os, try:
+
+```
+cat /etc/*-release
+```
+
+## google the package manager
+
+```
+e.g.: alpine manager : apk
+```
 
