@@ -9,7 +9,7 @@ while we want to do the opposite, we run up hypervisor (locate it at windows key
 # docker GUI
 開啟xserver；在dockerfile裡面寫```RUN apt update && apt install -y pcmanfm xterm \ ENV DISPLAY=host.docker.internal:0.0 \ CMD pcmanfm```
 
-
+# docker instructions
 
 docker run [flags] [image] [instrcution]
 
@@ -63,7 +63,7 @@ postgres版本很重要，要使用12-alpine
 
 # using dockerfile
 
-## first need to build a image
+## build a image
 
 
 docker build [flag] [path]
