@@ -49,6 +49,8 @@ docker volume create --name [name]
 
 建立一個volume讓開啟container時可以使用
 
+docker run
+
 ```
 docker run --name db -e POSTGRES_USER=tommy -e POSTGRES_PASSWORD=0000 -e POSTGRES_DB=campus -v pg-data:/var/lib/postgresql/data -p 5432:5432 -d postgres:12-alpine
 ```
